@@ -9,20 +9,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  build: {
-    outDir: 'dist/renderer',
-    emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'monaco': ['monaco-editor'],
-          'vendor': ['react', 'react-dom', 'zustand'],
-        },
-      },
-    },
-  },
   server: {
     port: 5173,
-    strictPort: false,
+    host: 'localhost',
+  },
+  build: {
+    outDir: 'dist/renderer',
+    target: 'esnext',
   },
 });
