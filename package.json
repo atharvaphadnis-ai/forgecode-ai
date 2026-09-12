@@ -21,6 +21,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "electron-is-dev": "^2.0.0",
     "electron-store": "^8.1.0",
     "keytar": "^7.9.0",
     "monaco-editor": "^0.50.0",
