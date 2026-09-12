@@ -1,0 +1,67 @@
+.terminal-container {
+  height: 200px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+}
+
+.terminal-header {
+  padding: 0.5rem 1rem;
+  background-color: #252526;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminal-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.terminal-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.terminal-input-form {
+  padding: 0.5rem 1rem;
+  background-color: #1e1e1e;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.terminal-prompt {
+  color: #4ec9b0;
+  font-weight: bold;
+}
+
+.terminal-input {
+  flex: 1;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
